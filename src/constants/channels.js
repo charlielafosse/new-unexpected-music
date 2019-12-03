@@ -54,99 +54,106 @@ const CHANNELS = {
   "UUIUvL9I4Cgd1zSfwtgVNd-g": {
     id: "UUIUvL9I4Cgd1zSfwtgVNd-g",
     name: "emma zoia puts pretty good music on youtube"
-  },
-  UUpz7oXnz_OeuVozJZOggA6g: {
-    id: "UUpz7oXnz_OeuVozJZOggA6g",
-    name: "Left Ear Records"
-  },
+  }
+
+  // UUpz7oXnz_OeuVozJZOggA6g: {
+  //   id: "UUpz7oXnz_OeuVozJZOggA6g",
+  //   name: "Left Ear Records"
+  // },
+
   // "UUyuxokhhrf_2lJ-ArNTNNUg": {
   //   id: "UUyuxokhhrf_2lJ-ArNTNNUg",
   //   name: "jemiedub"
   // },
-  UUvQ1Jtd1qCQYuUFyA08ZWJA: {
-    id: "UUvQ1Jtd1qCQYuUFyA08ZWJA",
-    name: "Music from Memory"
-  },
-  "UUj-WhJNoYVKHVs4n2eI5tHQ": {
-    id: "UUj-WhJNoYVKHVs4n2eI5tHQ",
-    name: "Obscure Little Beasties"
-  },
-  UU1WpidoYChUGcyHAcnALQIg: {
-    id: "UU1WpidoYChUGcyHAcnALQIg",
-    name: "magrosi65"
-  },
-  "UCp-XZs1z6ZDm8hOa9i1fJvg": {
-    id: "UCp-XZs1z6ZDm8hOa9i1fJvg",
-    name: "Okonkole y Trompa"
-  },
-  UUwJxd6D0kKRiZBvBCc8SHYQ: {
-    id: "UUwJxd6D0kKRiZBvBCc8SHYQ",
-    name: "Alexa Chirnoagă"
-  },
-  UUvaQ3kpf0RD4iLuPbhLd1DA: {
-    id: "UUvaQ3kpf0RD4iLuPbhLd1DA",
-    name: "szatowski"
-  },
+
+  // UUvQ1Jtd1qCQYuUFyA08ZWJA: {
+  //   id: "UUvQ1Jtd1qCQYuUFyA08ZWJA",
+  //   name: "Music from Memory"
+  // },
+  // "UUj-WhJNoYVKHVs4n2eI5tHQ": {
+  //   id: "UUj-WhJNoYVKHVs4n2eI5tHQ",
+  //   name: "Obscure Little Beasties"
+  // },
+  // UU1WpidoYChUGcyHAcnALQIg: {
+  //   id: "UU1WpidoYChUGcyHAcnALQIg",
+  //   name: "magrosi65"
+  // },
+  // "UCp-XZs1z6ZDm8hOa9i1fJvg": {
+  //   id: "UCp-XZs1z6ZDm8hOa9i1fJvg",
+  //   name: "Okonkole y Trompa"
+  // },
+  // UUwJxd6D0kKRiZBvBCc8SHYQ: {
+  //   id: "UUwJxd6D0kKRiZBvBCc8SHYQ",
+  //   name: "Alexa Chirnoagă"
+  // },
+  // UUvaQ3kpf0RD4iLuPbhLd1DA: {
+  //   id: "UUvaQ3kpf0RD4iLuPbhLd1DA",
+  //   name: "szatowski"
+  // }
+
   // UUXG_MHlRfXWHYN_qlBXKxdA: {
   //   id: "UUXG_MHlRfXWHYN_qlBXKxdA",
   //   name: "RJJNY"
   // },
-  UU4OKXcQcvNwzW0S9aOchoiA: {
-    id: "UU4OKXcQcvNwzW0S9aOchoiA",
-    name: "gmercado"
-  },
-  UUcplO6c0soIRLAJecMbfgQw: {
-    id: "UUcplO6c0soIRLAJecMbfgQw",
-    name: "Infinite Expanse"
-  },
-  "UU5DqN_9-87Wi2-r9q0uGCEg": {
-    id: "UU5DqN_9-87Wi2-r9q0uGCEg",
-    name: "Basic Rhythm"
-  },
-  "UU9KPDqc4Gsv-YD5IL4r1CBQ": {
-    id: "UU9KPDqc4Gsv-YD5IL4r1CBQ",
-    name: "Marius Georgescu"
-  },
-  UUnOFDxLA201r1yH6eGM3hag: {
-    id: "UUnOFDxLA201r1yH6eGM3hag",
-    name: "Dusan Jankovic"
-  },
-  UUFgDSWi8sywY6i8AwAT4Jkw: {
-    id: "UUFgDSWi8sywY6i8AwAT4Jkw",
-    name: "julian"
-  },
+
+  // UU4OKXcQcvNwzW0S9aOchoiA: {
+  //   id: "UU4OKXcQcvNwzW0S9aOchoiA",
+  //   name: "gmercado"
+  // },
+  // UUcplO6c0soIRLAJecMbfgQw: {
+  //   id: "UUcplO6c0soIRLAJecMbfgQw",
+  //   name: "Infinite Expanse"
+  // },
+  // "UU5DqN_9-87Wi2-r9q0uGCEg": {
+  //   id: "UU5DqN_9-87Wi2-r9q0uGCEg",
+  //   name: "Basic Rhythm"
+  // },
+  // "UU9KPDqc4Gsv-YD5IL4r1CBQ": {
+  //   id: "UU9KPDqc4Gsv-YD5IL4r1CBQ",
+  //   name: "Marius Georgescu"
+  // },
+  // UUnOFDxLA201r1yH6eGM3hag: {
+  //   id: "UUnOFDxLA201r1yH6eGM3hag",
+  //   name: "Dusan Jankovic"
+  // },
+  // UUFgDSWi8sywY6i8AwAT4Jkw: {
+  //   id: "UUFgDSWi8sywY6i8AwAT4Jkw",
+  //   name: "julian"
+  // },
+
   // UUBG4i92lRPljHtffjD0fyqw: {
   //   id: "UUBG4i92lRPljHtffjD0fyqw",
   //   name: "Murf Woram"
   // },
-  UUe7Vj9aUUuVNgtagtfTV5NA: {
-    id: "UUe7Vj9aUUuVNgtagtfTV5NA",
-    name: "Musical Treasure"
-  },
-  UUpUaVaLffIuWGnxvDpapbrQ: {
-    id: "UUpUaVaLffIuWGnxvDpapbrQ",
-    name: "Sonne Image"
-  },
-  "UUlbrGiQIGFlF-Wm4JCNM7Rg": {
-    id: "UUlbrGiQIGFlF-Wm4JCNM7Rg",
-    name: "Mr Bongo"
-  },
-  UUQKlrmwFP2flRdjBPoiq8PA: {
-    id: "UUQKlrmwFP2flRdjBPoiq8PA",
-    name: "Saturn Archives 土星のアーカイブ"
-  },
-  UU3GsG9eD__5p2eeWaxvW7gA: {
-    id: "UU3GsG9eD__5p2eeWaxvW7gA",
-    name: "no obi, no insert"
-  },
-  UU8ya7uaEIuwo3lRn54gpRZw: {
-    id: "UU8ya7uaEIuwo3lRn54gpRZw",
-    name: "Brazilian Rare Grooves"
-  },
-  UUvMGwfEQz5rSJQFYFl6LWVA: {
-    id: "UUvMGwfEQz5rSJQFYFl6LWVA",
-    name: "Rare & Unfamiliar Music Hunt"
-  }
+
+  // UUe7Vj9aUUuVNgtagtfTV5NA: {
+  //   id: "UUe7Vj9aUUuVNgtagtfTV5NA",
+  //   name: "Musical Treasure"
+  // },
+  // UUpUaVaLffIuWGnxvDpapbrQ: {
+  //   id: "UUpUaVaLffIuWGnxvDpapbrQ",
+  //   name: "Sonne Image"
+  // },
+  // "UUlbrGiQIGFlF-Wm4JCNM7Rg": {
+  //   id: "UUlbrGiQIGFlF-Wm4JCNM7Rg",
+  //   name: "Mr Bongo"
+  // },
+  // UUQKlrmwFP2flRdjBPoiq8PA: {
+  //   id: "UUQKlrmwFP2flRdjBPoiq8PA",
+  //   name: "Saturn Archives 土星のアーカイブ"
+  // },
+  // UU3GsG9eD__5p2eeWaxvW7gA: {
+  //   id: "UU3GsG9eD__5p2eeWaxvW7gA",
+  //   name: "no obi, no insert"
+  // },
+  // UU8ya7uaEIuwo3lRn54gpRZw: {
+  //   id: "UU8ya7uaEIuwo3lRn54gpRZw",
+  //   name: "Brazilian Rare Grooves"
+  // },
+  // UUvMGwfEQz5rSJQFYFl6LWVA: {
+  //   id: "UUvMGwfEQz5rSJQFYFl6LWVA",
+  //   name: "Rare & Unfamiliar Music Hunt"
+  // }
 };
 
 // ids: [

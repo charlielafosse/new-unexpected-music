@@ -3,75 +3,49 @@ import React, { useState } from "react";
 import { Grid } from "./BubbleBoard.style";
 import Bubble from "./Bubble";
 
-import CHANNELS from "../constants/channels";
-
-const Container = ({ bubbleClick }) => {
-  const animations = ["float", "dim", "dim", "dim"];
-  const channels = CHANNELS;
-  // this sorts the spacing, according to a grid that should
-  // have 5 els per line
-  const makePositions = arr => {
-    let thing = -1;
-    return arr.reduce((acc, cur, i) => {
-      if (thing >= 9) thing = -1;
-      const y = Math.ceil((i + 1) / 5);
-      const x = y % 2 !== 0 ? thing + 2 : thing === -1 ? thing + 3 : thing + 1;
-      thing += 2;
-      return { ...acc, [i]: { x, y } };
-    }, {});
-  };
-  const grid = makePositions(Object.keys(channels));
-  console.log(grid);
+const Container = ({ bubbleClick, channels }) => {
   const bla = {
-    0: { x: 2, y: 1 },
-    1: { x: 4, y: 1 },
-    2: { x: 7, y: 1 },
-    3: { x: 1, y: 2 },
-    4: { x: 3, y: 2 },
-    5: { x: 5, y: 2 },
-    6: { x: 2, y: 3 },
-    7: { x: 4, y: 3 },
-    8: { x: 6, y: 3 },
-    9: { x: 8, y: 4 },
-    10: { x: 1, y: 4 },
-    11: { x: 3, y: 4 },
-    12: { x: 5, y: 5 },
-    13: { x: 7, y: 5 },
-    14: { x: 9, y: 5 },
-    15: { x: 2, y: 6 },
-    16: { x: 2, y: 6 },
-    17: { x: 4, y: 6 }
+    0: { x: 3, y: 1, size: 70, delay: 1200, floatTime: 2 },
+    1: { x: 5, y: 1, size: 220, delay: 2000, floatTime: 2.6 },
+    2: { x: 8, y: 1, size: 140, delay: 1600, floatTime: 2 },
+    3: { x: 2, y: 3, size: 110, delay: 1200, floatTime: 2.2 },
+    4: { x: 6, y: 3, size: 70, delay: 2000, floatTime: 2 },
+    5: { x: 9, y: 3, size: 70, delay: 1200, floatTime: 2.4 },
+    6: { x: 2, y: 5, size: 70, delay: 2000, floatTime: 2.6 },
+    7: { x: 4, y: 5, size: 70, delay: 1600, floatTime: 2.2 },
+    8: { x: 8, y: 5, size: 90, delay: 1200, floatTime: 2.4 }
   };
   const colors = [
+    "transparent",
     "#F75C2F",
     "#FC9F4D",
     "#DB4D6D",
-    "#FEDFE1",
     "#947A6D",
+    "#82CD9B",
     "#E98B2A"
   ];
-  const margins = [0, 20, 20, 60, 60, -20, -20, -60, -60];
-  const delays = [1200, 2000, 1600];
-  const floatTimes = [2, 2.2, 2.4];
-  const sizes = [220, 140, 90, 70, 50];
+  // const margins = [0, 20, 20, 60, 60, -20, -20, -60, -60];
+  // const delays = [1200, 2000, 1600];
+  // const floatTimes = [2, 2.2, 2.4];
+  // const sizes = [220, 140, 110, 70];
   const randomReturn = args => args[Math.floor(Math.random() * args.length)];
-  const handleHover = () => console.log("hover");
+  // const handleHover = () => console.log("hover");
   // func for passing down the dim animation prop to random bubbles
   return (
     <Grid>
       {Object.keys(channels).map((channel, i) => (
         <Bubble
-          animations={animations}
-          dimDelay={randomReturn(delays)}
-          floatTime={randomReturn(floatTimes)}
-          size={randomReturn(sizes)}
-          marginTop={randomReturn(margins)}
-          marginRight={randomReturn(margins)}
-          handleHover={handleHover}
+          dimDelay={bla[i].delay}
+          floatTime={bla[i].floatTime}
+          // size={randomReturn(sizes)}
+          size={bla[i].size}
+          // marginTop={randomReturn(margins)}
+          // marginRight={randomReturn(margins)}
+          // handleHover={handleHover}
           handleClick={() => bubbleClick(channel)}
           text={channel}
           color={randomReturn(colors)}
-          position={grid[i]}
+          position={bla[i]}
         />
       ))}
     </Grid>

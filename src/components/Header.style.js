@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Track = styled.h2`
-  color: white;
+  color: #fad7a0;
 `;
 
 export const Channel = styled.h3`
-  color: white;
+  color: #fad7a0;
 `;
 
 export const Container = styled.div`

@@ -9,11 +9,9 @@ import CHANNELS from "./constants/channels";
 
 const App = () => {
   const apiKey = "AIzaSyAf2mNxfsJgmJCWoTwXVc61fsqR7ksCnls";
-  const [playlistId, setPlaylistId] = useState("");
   const [trackData, setTrackData] = useState({
-    track: "poo by poo",
-    channel: "poo channel",
-    thumbnail: ""
+    track: "unexpected music",
+    channel: "prunus mume"
   });
   const [trackId, setTrackId] = useState("?");
   const getRandomTrack = playlistId => {
@@ -22,8 +20,6 @@ const App = () => {
     )
       .then(response => response.json())
       .then(result => {
-        console.log("res is", result);
-        console.log(result.items[0]);
         const trackSnippet =
           result.items[Math.floor(Math.random() * result.items.length)].snippet;
         console.log(trackSnippet.thumbnails.default);
@@ -37,12 +33,10 @@ const App = () => {
       .catch(err => console.error(err));
   };
   const bubbleClick = playlistId => getRandomTrack(playlistId);
-  console.log(trackData.thumbnail);
   return (
     <AppContainer color={"#0B1013"}>
-      {/* <img src={`${trackData.thumbnail}`}></img> */}
       <Header text={trackData} />
-      <BubbleBoard bubbleClick={bubbleClick} />
+      <BubbleBoard channels={CHANNELS} bubbleClick={bubbleClick} />
       <Player trackId={trackId}></Player>
     </AppContainer>
   );

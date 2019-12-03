@@ -25,7 +25,6 @@ ${dim} ${dimDelay /
 
 export const BubbleDiv = styled.div`
   border-radius: 50%;
-  // background-color: ${props => props.color};
   background-image: url("https://img.freepik.com/free-photo/linen-canvas-texture_1373-423.jpg?size=626&ext=jpg");
   width: ${props => props.size}px;
   height: ${props => props.size}px;
@@ -35,15 +34,8 @@ export const BubbleDiv = styled.div`
   margin-right: ${props => props.marginRight}px;
   margin: 0 auto;
   cursor: pointer;
-//   border: 1px solid ${props => props.color};
--webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
   opacity: 1;
-  -webkit-animation: ${props =>
-    doubleAnimation(props.dimDelay, props.floatTime)};
-}};
+  animation: ${props => doubleAnimation(props.dimDelay, props.floatTime)};
 `;
 
 export const BubbleOverlay = styled.div`
@@ -53,11 +45,11 @@ export const BubbleOverlay = styled.div`
   -webkit-box-shadow: inset 0px 0px 44px 0px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: inset 0px 0px 44px 0px rgba(0, 0, 0, 0.28);
   box-shadow: inset 0px 0px 44px 0px rgba(0, 0, 0, 0.28);
-  z-index: 2;
   opacity: 0.6;
   background: radial-gradient(
-    circle at 120px 120px,
+    circle at ${props => props.size / 3}px ${props => props.size / 3}px,
     ${props => props.color},
-    #000
+    #0b1013
   );
+  transition-property: background-color 0.5s ease;
 `;

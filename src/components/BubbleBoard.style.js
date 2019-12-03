@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 1px;
-  // width: calc(100vmin - 32px);
-  // height: calc(100vmin - 32px);
-  // width: 100vwh;
-  // height: 100%;
+  height: 100%;
+  width: 100vwh;
   margin: 0 auto;
   box-sizing: border-box;
 `;
