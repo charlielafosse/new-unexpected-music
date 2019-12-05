@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Grid } from "./BubbleBoard.style";
 import Bubble from "./Bubble";
 
-const Container = ({ bubbleClick, channels }) => {
+const Container = ({ bubbleClick, selectedChannels }) => {
   const bla = {
     0: { x: 3, y: 1, size: 70, delay: 1200, floatTime: 2 },
     1: { x: 5, y: 1, size: 220, delay: 2000, floatTime: 2.6 },
@@ -29,11 +29,14 @@ const Container = ({ bubbleClick, channels }) => {
   // const floatTimes = [2, 2.2, 2.4];
   // const sizes = [220, 140, 110, 70];
   const randomReturn = args => args[Math.floor(Math.random() * args.length)];
+
+  console.log(selectedChannels);
+
   // const handleHover = () => console.log("hover");
   // func for passing down the dim animation prop to random bubbles
   return (
     <Grid>
-      {Object.keys(channels).map((channel, i) => (
+      {selectedChannels.map((channel, i) => (
         <Bubble
           dimDelay={bla[i].delay}
           floatTime={bla[i].floatTime}
