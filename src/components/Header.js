@@ -1,11 +1,22 @@
 import React from "react";
 
-import { Container, Track, Channel } from "./Header.style";
+import { Anchor, Container, Track, Channel } from "./Header.style";
 
-const Header = ({ text }) => (
+const Header = ({ trackData }) => (
   <Container>
-    <Track>{text.track}</Track>
-    <Channel>{text.channel}</Channel>
+    <Track>{trackData.track}</Track>
+    <Channel>
+      <Anchor
+        href={
+          trackData.channelId.length < 1
+            ? `https://prunusmumethoughts.wordpress.com/`
+            : `https://www.youtube.com/channel/${trackData.channelId}`
+        }
+        target="_blank"
+      >
+        {trackData.channel}
+      </Anchor>
+    </Channel>
   </Container>
 );
 

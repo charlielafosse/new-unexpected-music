@@ -5,7 +5,7 @@ export const Grid = styled.div`
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 1px;
-  height: 100%;
+  height: 100vh;
   width: 100vwh;
   margin: 0 auto;
   box-sizing: border-box;

@@ -2,25 +2,15 @@ import React from "react";
 
 import { BubbleDiv, BubbleOverlay } from "./Bubble.style";
 
-const Bubble = ({
-  dimDelay,
-  floatTime,
-  handleClick,
-  // marginTop,
-  // marginRight,
-  position,
-  size,
-  color
-}) => {
+const Bubble = ({ bubbleStyle, handleClick, color }) => {
+  const { dimDelay, floatTime, size, x, y } = bubbleStyle;
   return (
     <BubbleDiv
       onClick={handleClick}
       size={size}
       dimDelay={dimDelay}
-      // marginTop={marginTop}
-      // marginRight={marginRight}
       floatTime={floatTime}
-      position={position}
+      position={{ x, y }}
     >
       <BubbleOverlay size={size} color={color}></BubbleOverlay>
     </BubbleDiv>
