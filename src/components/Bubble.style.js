@@ -36,6 +36,7 @@ export const BubbleDiv = styled.div`
   cursor: pointer;
   opacity: 1;
   animation: ${props => doubleAnimation(props.dimDelay, props.floatTime)};
+  overflow: hidden;
 `;
 
 export const BubbleOverlay = styled.div`

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import BubbleBoard from "./components/BubbleBoard";
 import Bubble from "./components/Bubble";
 import Player from "./components/Player";
-import Header from "./components/Header";
+import { Footer, Header } from "./components/Header";
 
 import { AppContainer } from "./App.style";
 import CHANNELS from "./constants/channels";
@@ -56,6 +56,7 @@ const App = () => {
         ))}
       </BubbleBoard>
       <Player trackId={trackId}></Player>
+      {/* <Footer></Footer> */}
     </AppContainer>
   );
 };

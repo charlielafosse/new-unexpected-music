@@ -7,22 +7,22 @@ const CHANNELS = {
     id: "UUKwzSZH4C4fs8P36Yl7-13g",
     name: "Growing Bin"
   },
-  // UUeZuqnSmUxDjq33qbWtpVtg: {
-  //   id: "UUeZuqnSmUxDjq33qbWtpVtg",
-  //   name: "Disco Ma Non Troppo"
-  // },
-  // UUbiZfxvkjBZi9_i7k8sxMXg: {
-  //   id: "UUbiZfxvkjBZi9_i7k8sxMXg",
-  //   name: "Dream Chimney"
-  // },
-  // "UUk1jxjTo9_Q5Ud-3XCe_TlA": {
-  //   id: "UUk1jxjTo9_Q5Ud-3XCe_TlA",
-  //   name: "Antinote Recordings"
-  // },
-  // "UUdBdbj1ks-ihdyEO-L5U3Qw": {
-  //   id: "UUdBdbj1ks-ihdyEO-L5U3Qw",
-  //   name: "Dark Entries Records"
-  // },
+  UUeZuqnSmUxDjq33qbWtpVtg: {
+    id: "UUeZuqnSmUxDjq33qbWtpVtg",
+    name: "Disco Ma Non Troppo"
+  },
+  UUbiZfxvkjBZi9_i7k8sxMXg: {
+    id: "UUbiZfxvkjBZi9_i7k8sxMXg",
+    name: "Dream Chimney"
+  },
+  "UUk1jxjTo9_Q5Ud-3XCe_TlA": {
+    id: "UUk1jxjTo9_Q5Ud-3XCe_TlA",
+    name: "Antinote Recordings"
+  },
+  "UUdBdbj1ks-ihdyEO-L5U3Qw": {
+    id: "UUdBdbj1ks-ihdyEO-L5U3Qw",
+    name: "Dark Entries Records"
+  },
   UUASPUONx7T4cSw3IubpbmSQ: {
     id: "UUASPUONx7T4cSw3IubpbmSQ",
     name: "Organic Music"
@@ -39,32 +39,32 @@ const CHANNELS = {
     id: "UUG9inuDQ1ROLufVWNmItj_g",
     name: "Ricardo Maraña"
   },
-  // "UUWrt09qfWJbRqATUGfv2-oA": {
-  //   id: "UUWrt09qfWJbRqATUGfv2-oA",
-  //   name: "spool hand"
-  // },
-  // UUEvOBw1tbvSY0xZ1OeVXk4A: {
-  //   id: "UUEvOBw1tbvSY0xZ1OeVXk4A",
-  //   name: "Matt Short"
-  // },
-  // UUV5Ml7O3gLAfgOz97SaCNsw: {
-  //   id: "UUV5Ml7O3gLAfgOz97SaCNsw",
-  //   name: "Isle of Jura"
-  // },
+  "UUWrt09qfWJbRqATUGfv2-oA": {
+    id: "UUWrt09qfWJbRqATUGfv2-oA",
+    name: "spool hand"
+  },
+  UUEvOBw1tbvSY0xZ1OeVXk4A: {
+    id: "UUEvOBw1tbvSY0xZ1OeVXk4A",
+    name: "Matt Short"
+  },
+  UUV5Ml7O3gLAfgOz97SaCNsw: {
+    id: "UUV5Ml7O3gLAfgOz97SaCNsw",
+    name: "Isle of Jura"
+  },
   "UUIUvL9I4Cgd1zSfwtgVNd-g": {
     id: "UUIUvL9I4Cgd1zSfwtgVNd-g",
     name: "emma zoia puts pretty good music on youtube"
   },
 
-  // UUpz7oXnz_OeuVozJZOggA6g: {
-  //   id: "UUpz7oXnz_OeuVozJZOggA6g",
-  //   name: "Left Ear Records"
-  // },
+  UUpz7oXnz_OeuVozJZOggA6g: {
+    id: "UUpz7oXnz_OeuVozJZOggA6g",
+    name: "Left Ear Records"
+  },
 
-  // "UUyuxokhhrf_2lJ-ArNTNNUg": {
-  //   id: "UUyuxokhhrf_2lJ-ArNTNNUg",
-  //   name: "jemiedub"
-  // },
+  "UUyuxokhhrf_2lJ-ArNTNNUg": {
+    id: "UUyuxokhhrf_2lJ-ArNTNNUg",
+    name: "jemiedub"
+  },
 
   UUvQ1Jtd1qCQYuUFyA08ZWJA: {
     id: "UUvQ1Jtd1qCQYuUFyA08ZWJA",

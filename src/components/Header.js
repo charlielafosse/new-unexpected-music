@@ -2,7 +2,7 @@ import React from "react";
 
 import { Anchor, Container, Track, Channel } from "./Header.style";
 
-const Header = ({ trackData }) => (
+export const Header = ({ trackData }) => (
   <Container>
     <Track>{trackData.track}</Track>
     <Channel>
@@ -20,4 +20,13 @@ const Header = ({ trackData }) => (
   </Container>
 );
 
-export default Header;
+// export const Footer = () => (
+//   <Container>
+//     <Channel>
+//       Made with 💙 by
+//       <Anchor href={`https://github.com/charlielafosse/`} target="_blank">
+//         charlielafosse
+//       </Anchor>
+//     </Channel>
+//   </Container>
+// );

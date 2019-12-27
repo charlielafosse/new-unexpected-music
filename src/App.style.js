@@ -6,4 +6,5 @@ export const AppContainer = styled.section`
   background-color: ${props => props.color};
   font-family: "Metrophobic", sans-serif;
   font-weight: 300;
+  width: 100%;
 `;
