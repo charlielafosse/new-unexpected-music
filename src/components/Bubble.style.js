@@ -5,7 +5,7 @@ const float = keyframes`
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-8px);
+		transform: translatey(-650px);
 	}
 	100% {
 		transform: translatey(0px);

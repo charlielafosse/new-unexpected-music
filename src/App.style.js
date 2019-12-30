@@ -8,3 +8,10 @@ export const AppContainer = styled.section`
   font-weight: 300;
   width: 100%;
 `;
+
+export const Splash = styled.div`
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

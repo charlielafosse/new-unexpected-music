@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const iFrame = styled.iframe`
-  //   position: fixed;
+  /* //   position: fixed;
   //   display: none;
-  //   visibility: hidden;
+  //   visibility: hidden; */
 `;

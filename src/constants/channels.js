@@ -78,8 +78,8 @@ const CHANNELS = {
     id: "UU1WpidoYChUGcyHAcnALQIg",
     name: "magrosi65"
   },
-  "UCp-XZs1z6ZDm8hOa9i1fJvg": {
-    id: "UCp-XZs1z6ZDm8hOa9i1fJvg",
+  "PLaLjSOz-rF-y7omcmnSuvGC6GOJzKQl3F": {
+    id: "PLaLjSOz-rF-y7omcmnSuvGC6GOJzKQl3F",
     name: "Okonkole y Trompa"
   },
   UUwJxd6D0kKRiZBvBCc8SHYQ: {
@@ -126,10 +126,10 @@ const CHANNELS = {
   //   name: "Murf Woram"
   // },
 
-  UUe7Vj9aUUuVNgtagtfTV5NA: {
-    id: "UUe7Vj9aUUuVNgtagtfTV5NA",
-    name: "Musical Treasure"
-  },
+  // UUe7Vj9aUUuVNgtagtfTV5NA: {
+  //   id: "UUe7Vj9aUUuVNgtagtfTV5NA",
+  //   name: "Musical Treasure"
+  // },
   UUpUaVaLffIuWGnxvDpapbrQ: {
     id: "UUpUaVaLffIuWGnxvDpapbrQ",
     name: "Sonne Image"

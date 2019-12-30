@@ -5,7 +5,7 @@ import Bubble from "./components/Bubble";
 import Player from "./components/Player";
 import { Footer, Header } from "./components/Header";
 
-import { AppContainer } from "./App.style";
+import { AppContainer, Splash } from "./App.style";
 import CHANNELS from "./constants/channels";
 import BUBBLE_STYLES from "./constants/bubbleStyles";
 import COLORS from "./constants/colors";
@@ -19,10 +19,9 @@ const App = () => {
   const [trackData, setTrackData] = useState({
     track: "unexpected music",
     channel: "prunus mume",
-    channelId: ""
+    channelId: "",
+    trackId: ""
   });
-
-  const [trackId, setTrackId] = useState("?");
 
   const getRandomTrack = playlistId => {
     fetch(
@@ -35,9 +34,9 @@ const App = () => {
         setTrackData({
           track: trackSnippet.title,
           channel: trackSnippet.channelTitle,
-          channelId: trackSnippet.channelId
+          channelId: trackSnippet.channelId,
+          trackId: trackSnippet.resourceId.videoId
         });
-        setTrackId(trackSnippet.resourceId.videoId);
       })
       .catch(err => console.error(err));
   };
@@ -45,17 +44,20 @@ const App = () => {
   const bubbleClick = playlistId => getRandomTrack(playlistId);
   return (
     <AppContainer color={"#0B1013"}>
-      <Header trackData={trackData} />
+      <Splash>
+        <Header trackData={trackData} />
+      </Splash>
       <BubbleBoard>
         {selectedChannels.map((channel, i) => (
           <Bubble
+            key={i}
             bubbleStyle={BUBBLE_STYLES[i]}
             handleClick={() => bubbleClick(channel)}
             color={randomReturn(COLORS)}
           />
         ))}
       </BubbleBoard>
-      <Player trackId={trackId}></Player>
+      <Player trackId={trackData.trackId}></Player>
       {/* <Footer></Footer> */}
     </AppContainer>
   );

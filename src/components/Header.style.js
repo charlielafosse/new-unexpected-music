@@ -9,6 +9,7 @@ export const Channel = styled.h3`
   color: #fad7a0;
   opacity: 0.8;
   cursor: pointer;
+  letter-spacing: 0.4rem;
 `;
 
 export const Anchor = styled.a`
@@ -20,5 +21,5 @@ export const Container = styled.div`
   margin: 0 auto;
   text-align: center;
   padding-top: 10px;
-  z-index: 0;
+  z-index: 1;
 `;
