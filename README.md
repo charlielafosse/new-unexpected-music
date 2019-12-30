@@ -1,6 +1,6 @@
 ### New unexpected music 🌞
 
-An overdue refactor and redesign of [prunus mume: unexpected music](https://github.com/charlielafosse/prunus-mume-unexpected-music).
+An overdue refactor and redesign of [prunus mume: unexpected music](https://github.com/charlielafosse/prunus-mume-unexpected-music)
 
 This project is deployed on [Netlify](https://serene-einstein-392a36.netlify.com/)
 
@@ -18,11 +18,11 @@ This project is deployed on [Netlify](https://serene-einstein-392a36.netlify.com
 
 #### To do
 
-- bug: some bubbles not working
-- burger menu with how to/help and featured channels
+- ~~bug: some bubbles not working~~
+- ~~drawer with how to/help~~
 - mobile/responsive
 - endless play functionality
-- ~splash page, scroll down (better for initial render of lights)~
+- ~~splash page, scroll down (better for initial render of lights)~~
 - pause/mute button
 - like, save for later functionality
   - saved records panel

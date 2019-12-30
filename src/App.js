@@ -5,7 +5,7 @@ import Bubble from "./components/Bubble";
 import Player from "./components/Player";
 import { Footer, Header } from "./components/Header";
 
-import { AppContainer, Splash } from "./App.style";
+import { AppContainer, Help, Menu, Splash } from "./App.style";
 import CHANNELS from "./constants/channels";
 import BUBBLE_STYLES from "./constants/bubbleStyles";
 import COLORS from "./constants/colors";
@@ -22,6 +22,8 @@ const App = () => {
     channelId: "",
     trackId: ""
   });
+
+  const [isMenuVisible, setMenuVisibility] = useState(false);
 
   const getRandomTrack = playlistId => {
     fetch(
@@ -42,8 +44,14 @@ const App = () => {
   };
   const selectedChannels = selectChannels(CHANNELS, BUBBLE_STYLES);
   const bubbleClick = playlistId => getRandomTrack(playlistId);
+  const showMenu = () => setMenuVisibility(!isMenuVisible);
   return (
     <AppContainer color={"#0B1013"}>
+      <Help onClick={() => showMenu()}>?</Help>
+      <Menu show={isMenuVisible}>
+        Click a bubble to discover a new song. <br></br>
+        <br></br> You can select the track or channel name for more info.{" "}
+      </Menu>
       <Splash>
         <Header trackData={trackData} />
       </Splash>
