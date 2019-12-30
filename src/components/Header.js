@@ -36,7 +36,7 @@ export const Header = ({ trackData }) => (
 // export const Footer = () => (
 //   <Container>
 //     <Channel>
-//       Made with 💙 by
+//       Made by
 //       <Anchor href={`https://github.com/charlielafosse/`} target="_blank">
 //         charlielafosse
 //       </Anchor>
